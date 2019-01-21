@@ -4,7 +4,6 @@
 <?oxygen RNGSchema="../schemas/tei_all.rng" type="xml"?>
 <!-- $Id: StrindbergA_FrokenJulie.xml 115988 2015-05-06 13:08:44Z maril $-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <!-- Webhook test: changing multiple files -->
   <teiHeader>
     <fileDesc>
       <titleStmt>
