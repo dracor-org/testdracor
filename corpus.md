@@ -1,0 +1,1 @@
+This corpus is for testing purposes only. Features a handful of plays in different languages.
