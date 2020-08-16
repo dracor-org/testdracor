@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Test Drama Corpus</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>DraCor</publisher>
+        <idno type="URI" xml:base="https://dracor.org/">test</idno>
+        <idno type="repo">https://github.com/dracor-org/testdracor</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/publicdomain/zero/1.0/">
+            Public Domain
+          </licence>
+        </availability>
+      </publicationStmt>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+       <p>
+         This corpus is for testing purposes only. Features a handful of plays
+         in different languages.
+       </p>
+      </projectDesc>
+    </encodingDesc>
+  </teiHeader>
+  <xi:include href="gogol-revizor.xml"/>
+  <xi:include href="lessing-emilia-galotti.xml"/>
+  <xi:include href="shakespeare-macbeth.xml"/>
+  <xi:include href="strindberg-froken-julie.xml"/>
+</teiCorpus>
