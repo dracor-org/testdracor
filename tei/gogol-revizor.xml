@@ -12,7 +12,7 @@
         <author key="wikidata:Q43718">Гоголь, Николай Васильевич</author>
       </titleStmt>
       <publicationStmt>
-        <publisher xml:id="dracor">DraCor</publisher>
+        <publisher>DraCor</publisher>
         <idno type="dracor" xml:base="https://dracor.org/id/">test000001</idno>
         <availability>
           <licence>

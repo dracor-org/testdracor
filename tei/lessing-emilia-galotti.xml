@@ -10,7 +10,7 @@
         <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
       </titleStmt>
       <publicationStmt>
-        <publisher xml:id="dracor">DraCor</publisher>
+        <publisher>DraCor</publisher>
         <idno type="URL">https://dracor.org</idno>
         <idno type="dracor" xml:base="https://dracor.org/id/">test000002</idno>
         <availability>
