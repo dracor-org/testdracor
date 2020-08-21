@@ -25,8 +25,4 @@
       </projectDesc>
     </encodingDesc>
   </teiHeader>
-  <xi:include href="gogol-revizor.xml"/>
-  <xi:include href="lessing-emilia-galotti.xml"/>
-  <xi:include href="shakespeare-macbeth.xml"/>
-  <xi:include href="strindberg-froken-julie.xml"/>
 </teiCorpus>
