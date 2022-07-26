@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="rus">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="test000001" xml:lang="rus">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -9,18 +8,27 @@
         <title type="main" xml:lang="eng">The Government Inspector</title>
         <title type="sub">Комедия в пяти действиях</title>
         <title type="sub" xml:lang="eng">A Comedy in Five Acts</title>
-        <author key="wikidata:Q43718">Гоголь, Николай Васильевич</author>
+        <author>
+          <persName>
+            <forename>Николай</forename>
+            <forename type="patronym">Васильевич</forename>
+            <surname>Гоголь</surname>
+          </persName>
+          <persName xml:lang="eng">
+            <forename>Nikolai</forename>
+            <surname>Gogol</surname>
+          </persName>
+          <idno type="wikidata">Q43718</idno>
+        </author>
       </titleStmt>
       <publicationStmt>
-        <publisher>DraCor</publisher>
-        <idno type="dracor" xml:base="https://dracor.org/id/">test000001</idno>
+        <publisher xml:id="dracor">DraCor</publisher>
         <availability>
           <licence>
             <ab>CC0 1.0</ab>
             <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
           </licence>
         </availability>
-        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q471066</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="digitalSource">
@@ -31,10 +39,6 @@
           </availability>
           <bibl type="originalSource">
             <title>Н. В. Гоголь. Собрание сочинений в 9 т. Т. 4. М.: Русская книга, 1994.</title>
-            <date type="print" when="1836">"Дата первой публикации: 1836" (Wikipedia)</date>
-            <date type="premiere" when="1836">"Первые представления шли в первой редакции 1836
-              года." (Wikipedia)</date>
-            <date type="written" when="1835">"1835 г." (ilibrary)</date>
           </bibl>
         </bibl>
       </sourceDesc>
@@ -178,8 +182,9 @@
       </particDesc>
       <textClass>
         <keywords>
-          <term type="genreTitle" subtype="comedy">Комедия в пяти действиях</term>
+          <term type="genreTitle">Comedy</term>
         </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q40831</classCode>
       </textClass>
     </profileDesc>
     <revisionDesc>
@@ -199,6 +204,23 @@
       </listChange>
     </revisionDesc>
   </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1836">
+        <desc>"Дата первой публикации: 1836" (Wikipedia)</desc>
+      </event>
+      <event type="premiere" when="1836">
+        <desc>"Первые представления шли в первой редакции 1836
+              года." (Wikipedia)</desc>
+      </event>
+      <event type="written" when="1835">
+        <desc>"1835 г." (ilibrary)</desc>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/test000001" passive="http://www.wikidata.org/entity/Q471066"/>
+    </listRelation>
+  </standOff>
   <text>
     <front>
       <docTitle>
@@ -667,8 +689,7 @@
             <speaker>Добчинский.</speaker>
             <p>Неожиданное известие!</p>
           </sp>
-          <sp
-            who="#gorodnichij #ammos_fedorovich_ljapkin_tjapkin #pochtmejster #luka_lukich #artemij_filippovich_zemljanika #chastnyj_pristav #lekar">
+          <sp who="#gorodnichij #ammos_fedorovich_ljapkin_tjapkin #pochtmejster #luka_lukich #artemij_filippovich_zemljanika #chastnyj_pristav #lekar">
             <speaker>Все.</speaker>
             <p>Что, что такое?</p>
           </sp>
@@ -2384,7 +2405,11 @@
           </sp>
           <sp who="#anna_andreevna">
             <speaker>Анна Андреевна.</speaker>
-            <p>Я живу в деревне... Хлестаков. Да деревня, впрочем, тоже имеет свои пригорки,
+            <p>Я живу в деревне... </p>
+          </sp>
+          <sp who="#hlestakov">
+            <speaker>Хлестаков.</speaker>
+            <p>Да деревня, впрочем, тоже имеет свои пригорки,
               ручейки... Ну, конечно, кто же сравнит с Петербургом! Эх, Петербург! что за жизнь,
               право! Вы, может быть, думаете, что я только переписываю; нет, начальник отделения со
               мной на дружеской ноге. Этак ударит по плечу: «Приходи, братец, обедать!» Я только на
@@ -2958,8 +2983,7 @@
             <p>Что вы! что вы: Цицерон! Смотрите, что выдумали! Что иной раз увлечешься говоря о
               домашней своре или гончей ищейке...</p>
           </sp>
-          <sp
-            who="#artemij_filippovich_zemljanika #pochtmejster #luka_lukich #dobchinskij #bobchinskij">
+          <sp who="#artemij_filippovich_zemljanika #pochtmejster #luka_lukich #dobchinskij #bobchinskij">
             <speaker>Все</speaker>
             <stage>(пристают к нему).</stage>
             <p>Нет, вы не только о собаках, вы и о столпотворении... Нет, Аммос Федорович, не
@@ -5008,8 +5032,7 @@
             <p>Удивительное дело, господа! Чиновник, которого мы приняли за ревизора, был не
               ревизор.</p>
           </sp>
-          <sp
-            who="#gorodnichij #anna_andreevna #marja_antonovna #kuptsy #ammos_fedorovich_ljapkin_tjapkin #artemij_filippovich_zemljanika #rastakovskij #korobkin #zhena_korobkina #ljuljukov #bobchinskij #dobchinskij #luka_lukich #zhena_luki_lukicha #chastnyj_pristav #mnogie_iz_gostej #gostja">
+          <sp who="#gorodnichij #anna_andreevna #marja_antonovna #kuptsy #ammos_fedorovich_ljapkin_tjapkin #artemij_filippovich_zemljanika #rastakovskij #korobkin #zhena_korobkina #ljuljukov #bobchinskij #dobchinskij #luka_lukich #zhena_luki_lukicha #chastnyj_pristav #mnogie_iz_gostej #gostja">
             <speaker>Все.</speaker>
             <p>Как не ревизор?</p>
           </sp>
@@ -5084,8 +5107,7 @@
             <p>Эх, Антон Антонович! что Сибирь? далеко Сибирь. Вот лучше я вам прочту. Господа!
               позвольте прочитать письмо!</p>
           </sp>
-          <sp
-            who="#gorodnichij #anna_andreevna #marja_antonovna #kuptsy #ammos_fedorovich_ljapkin_tjapkin #artemij_filippovich_zemljanika #rastakovskij #korobkin #zhena_korobkina #ljuljukov #bobchinskij #dobchinskij #luka_lukich #zhena_luki_lukicha #chastnyj_pristav #mnogie_iz_gostej #gostja">
+          <sp who="#gorodnichij #anna_andreevna #marja_antonovna #kuptsy #ammos_fedorovich_ljapkin_tjapkin #artemij_filippovich_zemljanika #rastakovskij #korobkin #zhena_korobkina #ljuljukov #bobchinskij #dobchinskij #luka_lukich #zhena_luki_lukicha #chastnyj_pristav #mnogie_iz_gostej #gostja">
             <speaker>Все.</speaker>
             <p>Читайте, читайте!</p>
           </sp>
@@ -5202,8 +5224,7 @@
             <speaker>Почтмейстер.</speaker>
             <p>Нет, всё читайте! ведь прежде все читано.</p>
           </sp>
-          <sp
-            who="#gorodnichij #anna_andreevna #marja_antonovna #kuptsy #ammos_fedorovich_ljapkin_tjapkin #pochtmejster #rastakovskij #korobkin #zhena_korobkina #ljuljukov #bobchinskij #dobchinskij #luka_lukich #zhena_luki_lukicha #chastnyj_pristav #mnogie_iz_gostej #gostja">
+          <sp who="#gorodnichij #anna_andreevna #marja_antonovna #kuptsy #ammos_fedorovich_ljapkin_tjapkin #pochtmejster #rastakovskij #korobkin #zhena_korobkina #ljuljukov #bobchinskij #dobchinskij #luka_lukich #zhena_luki_lukicha #chastnyj_pristav #mnogie_iz_gostej #gostja">
             <speaker>Все.</speaker>
             <p>Отдайте, Артемий Филиппович, отдайте письмо! <stage>(Коробкину.)</stage> Читайте!</p>
           </sp>

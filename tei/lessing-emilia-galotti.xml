@@ -1,25 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="../css/tei.css"?>
 <?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ger">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="test000002" xml:lang="ger">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title type="main">Emilia Galotti</title>
         <title type="sub">Ein Trauerspiel in fünf Aufzügen</title>
-        <author key="pnd:118572121">Lessing, Gotthold Ephraim</author>
+        <author>
+          <persName>
+            <forename>Gotthold</forename>
+            <forename>Ephraim</forename>
+            <surname>Lessing</surname>
+          </persName>
+          <idno type="wikidata">Q34628</idno>
+          <idno type="pnd">118572121</idno>
+        </author>
       </titleStmt>
       <publicationStmt>
-        <publisher>DraCor</publisher>
+        <publisher xml:id="dracor">DraCor</publisher>
         <idno type="URL">https://dracor.org</idno>
-        <idno type="dracor" xml:base="https://dracor.org/id/">test000002</idno>
         <availability>
           <licence>
             <ab>CC0 1.0</ab>
             <ref target="https://creativecommons.org/publicdomain/zero/1.0/">Licence</ref>
           </licence>
         </availability>
-        <idno type="wikidata" xml:base="https://www.wikidata.org/entity/">Q782653</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="digitalSource">
@@ -28,17 +34,13 @@
           <availability>
             <licence>
               <ab>CC-BY-3.0</ab>
-              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode"
-                >Lizenzvertrag</ref>
+              <ref target="http://creativecommons.org/licenses/by/3.0/de/legalcode">Lizenzvertrag</ref>
             </licence>
           </availability>
           <bibl type="originalSource">
             <title>Gotthold Ephraim Lessing: Werke. Herausgegeben von Herbert G. Göpfert in
               Zusammenarbeit mit Karl Eibl, Helmut Göbel, Karl S. Guthke, Gerd Hillen, Albert von
               Schirmding und Jörg Schönert, Band 1–8, München: Hanser, 1970 ff.</title>
-            <date type="print" when="1772"/>
-            <date type="premiere" when="1772"/>
-            <date type="written"/>
           </bibl>
         </bibl>
       </sourceDesc>
@@ -86,17 +88,17 @@
             <persName>Orsina</persName>
           </person>
           <listRelation type="personal">
-            <relation name="parent_of" active="#odoardo" passive="#emilia" />
-            <relation name="parent_of" active="#claudia" passive="#emilia" />
-            <relation name="associated_with" active="#marinelli" passive="#der_prinz" />
-            <relation name="associated_with" active="#camillo_rota" passive="#der_prinz" />
+            <relation name="parent_of" active="#odoardo #claudia" passive="#emilia"/>
+            <relation name="associated_with" active="#marinelli" passive="#der_prinz"/>
+            <relation name="associated_with" active="#camillo_rota" passive="#der_prinz"/>
           </listRelation>
         </listPerson>
       </particDesc>
       <textClass>
         <keywords>
-          <term type="genreTitle">Trauerspiel</term>
+          <term type="genreTitle">Tragedy</term>
         </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q80930</classCode>
       </textClass>
     </profileDesc>
     <revisionDesc>
@@ -108,29 +110,48 @@
       </listChange>
     </revisionDesc>
   </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="print" when="1772">
+        <desc/>
+      </event>
+      <event type="premiere" when="1772-03-13">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/test000002" passive="http://www.wikidata.org/entity/Q782653"/>
+    </listRelation>
+  </standOff>
   <text>
     <front>
-      <docAuthor>Gotthold Ephraim Lessing</docAuthor>
-      <docTitle>
-        <titlePart type="main">Emilia Galotti</titlePart>
-        <titlePart type="sub">Ein Trauerspiel in fünf Aufzügen</titlePart>
-        <pb n="128"/>
-      </docTitle>
+      <titlePage>
+        <docAuthor>Gotthold Ephraim Lessing</docAuthor>
+        <docTitle>
+          <titlePart type="main">Emilia Galotti</titlePart>
+          <titlePart type="sub">Ein Trauerspiel in fünf Aufzügen</titlePart>
+        </docTitle>
+      </titlePage>
+      <pb n="128"/>
       <castList>
         <head>Personen.</head>
-        <castItem>Emilia Galotti.</castItem>
+        <castItem><role>Emilia Galotti.</role></castItem>
         <castGroup rend="braced">
-          <castItem>Odoardo,</castItem>
-          <castItem>Claudia Galotti,</castItem>
+          <castItem><role>Odoardo,</role></castItem>
+          <castItem><role>Claudia Galotti,</role></castItem>
           <roleDesc>Eltern der Emilia.</roleDesc>
         </castGroup>
-        <castItem>Hettore Gonzaga, Prinz von Guastalla.</castItem>
-        <castItem>Marinelli, Kammerherr des Prinzen.</castItem>
-        <castItem>Camillo Rota, einer von des Prinzen Räten.</castItem>
-        <castItem>Conti, Maler.</castItem>
-        <castItem>Graf Appiani.</castItem>
-        <castItem>Gräfin Orsina.</castItem>
-        <castItem>Angelo, und einige Bediente.</castItem>
+        <castItem><role>Hettore Gonzaga,</role>
+          <roleDesc>Prinz von Guastalla.</roleDesc></castItem>
+        <castItem><role>Marinelli,</role>
+          <roleDesc>Kammerherr des Prinzen.</roleDesc></castItem>
+        <castItem><role>Camillo Rota,</role>
+          <roleDesc>einer von des Prinzen Räten.</roleDesc></castItem>
+        <castItem><role>Conti,</role>
+          <roleDesc>Maler.</roleDesc></castItem>
+        <castItem><role>Graf Appiani.</role></castItem>
+        <castItem><role>Gräfin Orsina.</role></castItem>
+        <castItem><role>Angelo,</role> und <role>einige Bediente.</role></castItem>
         <pb n="128"/>
       </castList>
     </front>
