@@ -24,5 +24,13 @@
        </p>
       </projectDesc>
     </encodingDesc>
+    <!--
+      The revisionDesc determine the status of the corpus in the DraCor
+      registry. See https://github.com/dracor-org/dracor-registry#status.
+    -->
+    <revisionDesc status="draft">
+      <change when="2018-12-12" status="proposed"/>
+      <change when="2020-07-17" status="draft"/>
+    </revisionDesc>
   </teiHeader>
 </teiCorpus>
