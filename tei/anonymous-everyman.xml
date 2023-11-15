@@ -110,7 +110,7 @@
           <person xml:id="beauty" sex="UNKNOWN">
             <persName>Beaute</persName>
           </person>
-          <person xml:id="strenght" sex="UNKNOWN">
+          <person xml:id="strength" sex="UNKNOWN">
             <persName>Strength</persName>
           </person>
           <person xml:id="discretion" sex="UNKNOWN">
@@ -1430,7 +1430,7 @@
         <speaker>Dyscrecion.</speaker>
         <l>I, Dyscrecyon, wyll byde by you also.</l>
       </sp>
-      <sp who="knowledge">
+      <sp who="#knowledge">
         <speaker>Kniowlege.</speaker>
         <l>And though this pylgrymage be neuer so stronge,</l>
         <l>I wyll neuer parte you fro.</l>
