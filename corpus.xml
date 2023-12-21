@@ -25,7 +25,7 @@
       </projectDesc>
     </encodingDesc>
     <!--
-      The revisionDesc determine the status of the corpus in the DraCor
+      The revisionDesc determines the status of the corpus in the DraCor
       registry. See https://github.com/dracor-org/dracor-registry#status.
     -->
     <revisionDesc status="draft">
