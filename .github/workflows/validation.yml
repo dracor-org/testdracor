@@ -15,9 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Validate against TEI-All
-        uses: dracor-org/tei-validate-action@3229a64b94e940844bbd5721bf5a272f529a34bc # v2.0.0-rc.1
+        uses: dracor-org/dracor-validate-action@af4da4ae142f2ba85df988af22588220c9759617
       - name: Validate against DraCor
-        uses: dracor-org/tei-validate-action@3229a64b94e940844bbd5721bf5a272f529a34bc # v2.0.0-rc.1
+        uses: dracor-org/dracor-validate-action@af4da4ae142f2ba85df988af22588220c9759617
         with:
           schema: dracor
-          fatal: no
+          warn-only: yes
