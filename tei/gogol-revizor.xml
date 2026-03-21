@@ -38,6 +38,18 @@
         <bibl type="originalSource">
           Н. В. Гоголь. Собрание сочинений в 9 т. Т. 4. М.: Русская книга, 1994.
         </bibl>
+        <bibl type="wikidata"><idno>Q471066</idno></bibl>
+        <listEvent>
+          <event type="print" when="1836">
+            <desc>"Дата первой публикации: 1836" (Wikipedia)</desc>
+          </event>
+          <event type="premiere" when="1836">
+            <desc>"Первые представления шли в первой редакции 1836 года." (Wikipedia)</desc>
+          </event>
+          <event type="written" when="1835">
+            <desc>"1835 г." (ilibrary)</desc>
+          </event>
+        </listEvent>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -202,23 +214,6 @@
       </listChange>
     </revisionDesc>
   </teiHeader>
-  <standOff>
-    <listEvent>
-      <event type="print" when="1836">
-        <desc>"Дата первой публикации: 1836" (Wikipedia)</desc>
-      </event>
-      <event type="premiere" when="1836">
-        <desc>"Первые представления шли в первой редакции 1836
-              года." (Wikipedia)</desc>
-      </event>
-      <event type="written" when="1835">
-        <desc>"1835 г." (ilibrary)</desc>
-      </event>
-    </listEvent>
-    <listRelation>
-      <relation name="wikidata" active="https://dracor.org/entity/test000001" passive="http://www.wikidata.org/entity/Q471066"/>
-    </listRelation>
-  </standOff>
   <text>
     <front>
       <docTitle>
