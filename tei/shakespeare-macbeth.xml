@@ -69,6 +69,15 @@
             <date>April, 2015</date>
           </publicationStmt>
         </biblFull>
+        <bibl type="wikidata"><idno>Q130283</idno></bibl>
+        <listEvent>
+          <event type="print" when="1623">
+            <desc/>
+          </event>
+          <event type="written" when="1606">
+            <desc/>
+          </event>
+        </listEvent>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -239,19 +248,6 @@
       </particDesc>
     </profileDesc>
   </teiHeader>
-  <standOff>
-    <listEvent>
-      <event type="print" when="1623">
-        <desc/>
-      </event>
-      <event type="written" when="1606">
-        <desc/>
-      </event>
-    </listEvent>
-    <listRelation>
-      <relation name="wikidata" active="https://dracor.org/entity/test000003" passive="http://www.wikidata.org/entity/Q130283"/>
-    </listRelation>
-  </standOff>
   <text>
     <front>
       <castList>

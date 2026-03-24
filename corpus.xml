@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+<dracorCorpus xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Test Drama Corpus</title>
+        <editor ref="https://orcid.org/0000-0003-0553-7512">Carsten Milling</editor>
       </titleStmt>
       <publicationStmt>
         <publisher>DraCor</publisher>
-        <idno type="URI" xml:base="https://dracor.org/">test</idno>
-        <idno type="repo">https://github.com/dracor-org/testdracor</idno>
+        <idno>test</idno>
+        <ref type="repo" target="https://github.com/dracor-org/testdracor"/>
         <availability status="free">
           <licence target="https://creativecommons.org/publicdomain/zero/1.0/">
             Public Domain
           </licence>
         </availability>
       </publicationStmt>
+      <sourceDesc>
+        <p>See source information in individual TEI files.</p>
+      </sourceDesc>
     </fileDesc>
     <encodingDesc>
       <projectDesc>
@@ -33,4 +37,4 @@
       <change when="2020-07-17" status="draft"/>
     </revisionDesc>
   </teiHeader>
-</teiCorpus>
+</dracorCorpus>
